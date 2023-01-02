@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegularUserHomePage"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/welcome_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_username"
+        android:textSize="30sp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="vertical"
+            android:layout_margin="3dp">
+
+            <Button
+                android:id="@+id/enable_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:drawableLeft="@drawable/admin_logo"
+                android:text="@string/enable_admin_mode"
+                android:textSize="11sp"
+                tools:ignore="RtlHardcoded,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/log_out"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:drawableLeft="@drawable/logout"
+                android:text="@string/home_log_out"
+                android:textSize="11sp"
+                tools:ignore="RtlHardcoded,TextContrastCheck" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/search_logo"
+            android:text="@string/home_search"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/profile_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/profile_settings"
+            android:text="@string/profile_and_setting"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/create_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/add_playlist"
+            android:text="@string/create_new_playlist"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/upload_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/add_song"
+            android:text="@string/upload_song"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/queue_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/queue_logo"
+            android:text="@string/view_queue"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded,TextContrastCheck" />
+
+    </LinearLayout>
+
+</LinearLayout>

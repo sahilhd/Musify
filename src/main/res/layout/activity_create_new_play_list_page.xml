@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNewPlayListPage"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/input_playlist_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/playlist_cover"
+            android:contentDescription="@string/playlist_cover"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_playlist_name"/>
+
+        <EditText
+            android:id="@+id/upload_playlist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/new_playlist_name"
+            android:selectAllOnFocus="true"
+            tools:ignore="Autofill,TextContrastCheck"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_description"/>
+
+        <EditText
+            android:id="@+id/playlist_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/description"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone"
+            tools:ignore="Autofill,TextContrastCheck"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup_public_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radio_public_playlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="true"
+                android:text="@string/playlist_public" />
+            <RadioButton
+                android:id="@+id/radio_private_playlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:text="@string/playlist_private" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/create_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_playlist" />
+
+    </LinearLayout>
+
+</LinearLayout>

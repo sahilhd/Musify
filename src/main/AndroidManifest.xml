@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.artemifyMusicStudio" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Aria"
+        tools:targetApi="31" >
+        <activity
+            android:name=".AddToExistingPlaylistDisplayPage"
+            android:exported="false" />
+        <activity
+            android:name=".FollowerFollowingDisplayPage"
+            android:exported="false" />
+        <activity
+            android:name=".AddToNewPlaylistPage"
+            android:exported="false" />
+        <activity
+            android:name=".QueueDisplayPage"
+            android:exported="false" />
+        <activity
+            android:name=".ViewQueuePage"
+            android:exported="false" />
+        <activity
+            android:name=".PlaylistSongsDisplayPage"
+            android:exported="false" />
+        <activity
+            android:name=".SongDisplayPage"
+            android:exported="false" />
+        <activity
+            android:name=".SearchResultPage"
+            android:exported="false" />
+        <activity
+            android:name=".UserDisplayPage"
+            android:exported="false" />
+        <activity
+            android:name=".PlaylistDisplayPage"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAccountPage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPage"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileAndSettingPage"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNewPlayListPage"
+            android:exported="false" />
+        <activity
+            android:name=".SearchPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MainPage"
+            android:exported="false" />
+        <activity
+            android:name=".UploadSongPage"
+            android:exported="false" />
+        <activity
+            android:name=".RegularUserHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".StartPage"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaylistDisplayPage"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/playlist_name_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playlist_name"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/cover"
+            android:background="@drawable/playlist"
+            android:contentDescription="@string/playlist_description" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/display_like_playlist_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="@string/likes"
+                android:background="@drawable/like_button"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/likes" />
+
+            <TextView
+                android:id="@+id/display_num_likes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/likes"
+                android:gravity="center"/>
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/play_playlist"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="@string/play_playlist"-->
+<!--                android:background="@drawable/listen"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:contentDescription="@string/play_playlist" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/creator_info_display"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:text="@string/creator_info"
+            android:textSize="15sp"/>
+
+
+        <ScrollView
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:id="@+id/playlist_description_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/playlist_description"
+                android:textSize="15sp"/>
+        </ScrollView>
+
+
+        <TextView
+            android:id="@+id/song_public_display"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:text="@string/private_public"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/play_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/play_playlist"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/view_creator_in_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_creator"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/view_playlist_songs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/view_playlist_songs"
+            android:layout_marginTop="12dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

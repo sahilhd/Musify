@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartPage"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/welcome_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_artemify_music_studio"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_creations_today_will_be_the_greatest_works_of_art_tomorrow"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        />
+
+    <ImageView
+        android:layout_width="139dp"
+        android:layout_height="154dp"
+        android:src="@drawable/shrek_cat2"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/cat_logo" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/start"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/generate_default_entities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/first_time_initialization"
+        tools:ignore="TextContrastCheck" />
+
+</LinearLayout>
